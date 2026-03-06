@@ -93,8 +93,8 @@ export default function ListSwaps() {
                   <TableRow key={row.id}>
                     <TableCell>{row.id}</TableCell>
                     <TableCell>{row.status}</TableCell>
-                    <TableCell>{row.source_partner_id}</TableCell>
-                    <TableCell>{row.target_partner_id}</TableCell>
+                    <TableCell>{row.source_partner_name ? `${row.source_partner_name} (${row.source_partner_id})` : row.source_partner_id}</TableCell>
+                    <TableCell>{row.target_partner_name ? `${row.target_partner_name} (${row.target_partner_id})` : row.target_partner_id}</TableCell>
                     <TableCell>{row.source_points}</TableCell>
                     <TableCell>{row.usd_value}</TableCell>
                     <TableCell>{row.created_at}</TableCell>

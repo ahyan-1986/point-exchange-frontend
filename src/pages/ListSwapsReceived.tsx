@@ -89,11 +89,7 @@ export default function ListSwapsReceived() {
                   <TableRow key={row.id}>
                     <TableCell>{row.id}</TableCell>
                     <TableCell>{row.status}</TableCell>
-                    <TableCell>{
-                      partners.find((p: any) => p.id === row.source_partner_id)?.name
-                        ? `${partners.find((p: any) => p.id === row.source_partner_id)?.name} (${row.source_partner_id})`
-                        : row.source_partner_id
-                    }</TableCell>
+                    <TableCell>{row.source_partner_name ? `${row.source_partner_name} (${row.source_partner_id})` : row.source_partner_id}</TableCell>
                     <TableCell>{row.source_points}</TableCell>
                     <TableCell>{row.usd_value}</TableCell>
                     <TableCell>{row.created_at}</TableCell>

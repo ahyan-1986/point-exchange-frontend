@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react';
-import { Card, CardContent, CardHeader, Typography, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, CircularProgress, Alert, Box, TextField, Button } from '@mui/material';
+import { useState } from 'react';
+import { Card, CardContent, CardHeader, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, CircularProgress, Alert, Box, TextField, Button } from '@mui/material';
 import api from '../api/client';
 
 export default function ListRates() {
